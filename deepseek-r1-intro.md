@@ -24,7 +24,7 @@ For this instance, though much of the middle portion was omitted, CoT was over a
 ## Basic API Call
 
 For a basic DeepSeek API call, the following are prerequisite steps:
-- Apply for an [API key](https://platform.deepseek.com/api_keys)
+- Apply for an [API key](https://platform.deepseek.com/api_keys).
 - Install or update the OpenAI SDK:
     ```
     pip3 install -U openai
