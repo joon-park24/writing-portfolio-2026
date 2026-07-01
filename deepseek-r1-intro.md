@@ -17,7 +17,7 @@ Because of its emphasis on sequential learning and thinking, RL is ideal for mul
 
 The following screenshot demonstrates CoT, which starts with `<think>` and ends with `</think>`:
 
-![image](https://github.com/user-attachments/assets/a19f1cfc-9a10-4927-b681-7755a946d1b8)
+![image](images/cot_reasoning.png)
 
 For this instance, though much of the middle portion was omitted, CoT was over a hundred lines long, and for most instances, CoT is very verbose. DeepSeek-R1's final answer immediately follows `</think>`.
 
@@ -110,4 +110,4 @@ For Round 2, only `content` is appended to `messages`, with `"role": "assistant"
 
 A general structure for a multi-round conversation is illustrated in the following diagram:
 
-![Diagram of the general structure of a multi-round conversation.](https://github.com/user-attachments/assets/577501f2-45bc-4522-aece-e8b0d77feb57)
+![Diagram of the general structure of a multi-round conversation.](images/cot_sequence.png)
