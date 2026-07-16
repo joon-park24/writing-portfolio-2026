@@ -1,17 +1,17 @@
 # DeepSeek-R1 Introduction and Quick Start
 
-This page briefly explains reinforcement learning and chain of thought in DeepSeek-R1 and provides steps and Python examples to quickly try DeepSeek-R1 through API calls.
+This page briefly explains reinforcement learning and chain of thought in DeepSeek-R1 and also provides steps using Python to try DeepSeek-R1 through API calls.
 
-DeepSeek-R1 is an open-source large language model trained with reinforcement learning (RL) to perform complex reasoning. Such RL models are also called "reasoning models." In short, reasoning models "think" before delivering a final answer, and DeepSeek-R1 reveals its thinking process by providing a long Chain of Thought (CoT). CoT's use cases include:
-- following the model's thought process as it produces an answer.
-- troubleshooting, if the model produces an unsatisfactory answer.
-- distillation (knowledge transfer from a large, complex model to a smaller, simpler model).
+DeepSeek-R1 is an open-source large language model trained with reinforcement learning (RL) to perform complex reasoning. Such RL models are also called "reasoning models." In short, reasoning models "think" before delivering a final answer, and DeepSeek-R1 reveals its reasoning process by providing a long Chain of Thought (CoT). CoT's use cases include:
+- Following the model's thought process as it produces an answer.
+- Troubleshooting, if the model produces an unsatisfactory answer.
+- Distillation (knowledge transfer from a large, complex model to a smaller, simpler model).
 
 ## Reinforcement Learning and Chain of Thought
 
 RL is a paradigm of machine learning through which a machine learning model self-learns toward an optimal result or designated goal. RL encourages learning and desired behavior through a reward-penalty system. Essentially, the model learns by "thinking" and is rewarded as it approaches a satisfactory solution.
 
-RL is comparable to human learning methods. For example, consider learning to solve a math problem: a student is given a problem, and a teacher may oversee the student's thought process. As the student performs the steps to solve the problem, the teacher may either confirm that the student is approaching the desired solution or redirect if the student is straying from a correct method. When the student provides an answer, the teacher confirms that the answer is satisfactory; RL models learn and train much in the same way. Therefore, the **process** for finding a solution is as significant as finding the solution itself. As an RL model trains, it expands its problem-solving skillset and - depending on the problem - flexibly interchanges certain skills in between problem-solving steps.
+RL is comparable to human learning methods. For example, consider learning to solve a math problem: a student is given a problem, and a teacher may oversee the student's thought process. As the student performs the steps to solve the problem, the teacher may either confirm that the student is approaching the desired solution or redirect if the student is straying from a correct method. When the student provides an answer, the teacher confirms that the answer is satisfactory; RL models train much in the same way. Therefore, the **process** for finding a solution is as significant as finding the solution itself. As an RL model trains, it expands its problem-solving skillset and - depending on the problem - flexibly interchanges certain skills in between problem-solving steps.
 
 Because of its emphasis on sequential learning and thinking, RL is ideal for multi-step problem solving, such as scientific reasoning, mathematical proofs, and coding. When answering a question, DeepSeek-R1 "thinks out loud" and displays its step-by-step reasoning behind its final answer. This "thinking out loud" is also called CoT.
 
@@ -19,7 +19,7 @@ The following screenshot demonstrates CoT, which starts with `<think>` and ends 
 
 ![image](images/cot_reasoning.png)
 
-For this instance, though much of the middle portion was omitted, CoT was over a hundred lines long, and for most instances, CoT is very verbose. DeepSeek-R1's final answer immediately follows `</think>`.
+For this instance, though much of the middle portion was omitted, CoT was over a hundred lines long, and for most instances, CoT is highly verbose. DeepSeek-R1's final answer immediately follows `</think>`.
 
 ## Basic API Call
 
