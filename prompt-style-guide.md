@@ -4,9 +4,8 @@ The prompt is a symbol (such as `>` or `$`) that displays on an interface when a
 
 ## Standards
 
-- You must surround all prompt commands with either:
+- You must surround all prompt commands with:
   - singular backticks for in-line quotation, such as \`rm -rf folder\` which Markdown shows as `rm -rf folder`
-    or
   - triple backticks for block quotation, such as
 
     \```
@@ -19,7 +18,7 @@ The prompt is a symbol (such as `>` or `$`) that displays on an interface when a
     ```
     rm -rf folder
     ```
-    Generally, block quotation is preferable, especially if the quotation can - and should - be copied and pasted for easy reuse.
+    Generally, block quotation is preferable, especially if the quotation can be copied and pasted for easy reuse.
 
 - Block quotation is necessary for multiple lines of prompt commands.
   
