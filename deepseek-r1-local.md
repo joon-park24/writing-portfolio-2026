@@ -34,13 +34,13 @@ Because DeepSeek-R1 is open-source, Ollama - a free tool for running LLMs locall
    ```
      - A prompt line should appear, in which you can converse with the AI. Press enter after any prompt to see DeepSeek-R1's response.
 
-4. Whenever you are finished, type and enter `/bye` to exit the model interface. Additionally, stop your computer from running the model:
+4. When finished with using R1, type and enter `/bye` to exit the model interface. Additionally, stop your computer from running the model:
    ```
    ollama stop <DeepSeek-R1 Model>
    ```
 
 ## DeepSeek-R1 Models and Requirements
-The original DeepSeek-R1 is very large and is computationally intensive. For users with computers that are not designed to run LLMs, DeepSeek has distilled the original model into smaller, easier-to-run models. Though the models are up to hundreds of times smaller than the original, tests have indicated that the models demonstrate good performance and accuracy, though not to the same capabilities as the original. 
+The original DeepSeek-R1 is large and is computationally intensive. For users with computers that are not designed to run LLMs, DeepSeek has distilled the original model into smaller, easier-to-run models. Though the models are up to hundreds of times smaller than the original, tests have indicated that the models demonstrate good performance and accuracy, though not to the same capabilities as the original. 
 
 The following table provides details on and approximate requirements for each model. Replace `<DeepSeek-R1 Model>` for the previous command lines with the model name provided in the table.
 
